@@ -22,4 +22,8 @@ public class ProductRepository {
             new Product(10L, "Altavoces Bluetooth JBL", 90L)
         );
     }
+
+    public List<Product> findAll() {
+        return data;
+    }
 }
