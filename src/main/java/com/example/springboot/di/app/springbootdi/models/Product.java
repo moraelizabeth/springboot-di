@@ -1,13 +1,14 @@
 package com.example.springboot.di.app.springbootdi.models;
 
-class Product {
+public class Product {
 
     private Long id;
     private String name;
-    private String price;
+    private Long price;
 
     public Product() {}
-    public Product(Long id, String name, String price) {
+    
+    public Product(Long id, String name, Long price) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -25,10 +26,10 @@ class Product {
     public void setName(String name) {
         this.name = name;
     }
-    public String getPrice() {
+    public Long getPrice() {
         return price;
     }
-    public void setPrice(String price) {
+    public void setPrice(Long price) {
         this.price = price;
     }
 }
