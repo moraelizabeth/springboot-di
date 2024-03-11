@@ -26,4 +26,9 @@ public class ProductRepository {
     public List<Product> findAll() {
         return data;
     }
+
+    public Product findById(Long id) {
+        //predicate:
+        return data.stream().filter(p -> p.getId().equals(id)).findFirst().orElseThrow();
+    }
 }
